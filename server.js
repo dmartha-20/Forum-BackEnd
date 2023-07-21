@@ -2,7 +2,7 @@ const express = require('express');
 require('dotenv').config()
 const cors = require('cors');
 const app = express();
-const port = process.env.PORT||3000;
+const port = process.env.PORT||80;
 const userRouter = require('./server/api/users/user.router')
 const questionRouter = require('./server/api/question/question.router');
 const answerRouter = require('./server/api/answer/answer.router');
