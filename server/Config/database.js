@@ -11,7 +11,8 @@ require('dotenv').config();
 
 
 
-const pool = mysql.createConnection(process.env.DATABASE_URL);
+
+const pool =   mysql.createConnection(process.env.DATABASE_URL)
 
 let registration = `CREATE TABLE if not exists registration(
     user_id int auto_increment,
